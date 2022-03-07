@@ -1,3 +1,4 @@
+/* eslint-env node*/
 const fs = require("fs");
 
 module.exports = (func, fileName) => {
@@ -5,7 +6,7 @@ module.exports = (func, fileName) => {
     if (err) {
       func(err);
     } else {
-      func(data.toString())
+      func(data.toString());
     }
   });
 };

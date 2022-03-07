@@ -1,7 +1,8 @@
+/* eslint-env node*/
 const ls = require("./ls");
 const pwd = require("./pwd");
-const cat = require("./cat")
-const curl = require('./curl')
+const cat = require("./cat");
+const curl = require("./curl");
 
 const prompt = (data = "Node Shell") => {
   console.log(data);
@@ -9,7 +10,7 @@ const prompt = (data = "Node Shell") => {
 };
 
 const main = (data) => {
-  const cmd = data.toString().trim().split(' ');
+  const cmd = data.toString().trim().split(" ");
 
   switch (cmd[0]) {
     case "pwd":
